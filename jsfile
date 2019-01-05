@@ -1,11 +1,11 @@
 function fixInput(id){
-    let data = document.getElementById(id).value.toLowerCase();
-    let dataSplit = data.split(" ");
-    let input = [];
-    for (x in dataSplit) {
-        var check = dataSplit[x][0].toUpperCase();
-        var fix = dataSplit[x].replace(dataSplit[x][0], check);
-        input.push(fix);
+    let input = document.getElementById(id).value.toLowerCase();
+    let inputSplit = input.split(" ");
+    let data = [];
+    for (x in inputSplit) {
+        var check = inputSplit[x][0].toUpperCase();
+        var fix = inputSplit[x].replace(inputSplit[x][0], check);
+        data.push(fix);
         };
-    let fixedInput = input.join(" ");
+    let fixedInput = data.join(" ");
     }
