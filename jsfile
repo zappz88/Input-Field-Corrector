@@ -8,4 +8,5 @@ function fixInput(id){
         data.push(fix);
         };
     let fixedInput = data.join(" ");
+    return fixedInput;
     }
